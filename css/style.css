@@ -32,7 +32,7 @@ header{
 nav{
     position: absolute;
     right: 30px;
-    /* bottom: 0px; */
+    bottom: 0px;
 }
 
 nav ul li{
@@ -70,8 +70,14 @@ nav ul li a:hover{
     font-family: Verdana;
     top: 0;
     right: 0;
-    left: 0;
     bottom: 0;
+    left: 0;
     background: rgba(181, 9, 9, 0.8);
     z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;
 }
