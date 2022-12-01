@@ -8,7 +8,7 @@
     color: #777;
 }
 
-header{
+header {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -16,26 +16,26 @@ header{
     top: 0;
 }
 
-.logo{
+.logo {
     position: absolute;
     width: 300px;
     height: auto;
-    
+
 }
 
-.logo img{
+.logo img {
     width: 90%;
     margin-left: 10%;
 }
 
 /* Definir propriedades do menu */
-nav{
+nav {
     position: absolute;
     right: 30px;
-    bottom: 0px;
+    /* bottom: 0px; */
 }
 
-nav ul li{
+nav ul li {
     float: left;
     color: #FFF;
     width: auto;
@@ -45,27 +45,28 @@ nav ul li{
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #bbb;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #b13030;
 }
 
 /* Definir as propriedades da imagem principal */
-#banner{
+#banner {
     width: 100%;
 }
 
-#banner img{
+#banner img {
     width: 100%;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    margin-top: 96px;
 }
 
 /* Definir as propriedades dos pop-ups */
-.modalDialog{
+.modalDialog {
     position: fixed;
     font-family: Verdana;
     top: 0;
@@ -81,3 +82,50 @@ nav ul li a:hover{
     pointer-events: none;
     display: none;
 }
+
+.modalDialog:target {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.modalDialog p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modalDialog img {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+.close {
+    background-color: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+   }
+   .close:hover {
+    background-color: #b50909;
+   }
